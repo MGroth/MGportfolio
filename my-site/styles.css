@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000010;
+    background-color: #FBFCFC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    width: 400px;
+    padding: 1em;
+    margin: 20px auto;
+}
+
+.titlediv {
+    width: 500px;
+    border-bottom-width: 0.08em
+}
+
+.postdiv {
+    border-bottom: 0.04em solid black;
+}
+
+.postimg {
+    height: 300px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    padding: 20px 10px 10px 10px;
+    border-bottom: 0.07em solid rgb(30, 30, 30);
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
