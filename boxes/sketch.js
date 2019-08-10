@@ -1,8 +1,7 @@
 var boxwidth = 30.0;
 var boxheight = 30.0;
-var canvassize = 600;
 var boxlist = [];
-var gridsize = 6; //Rows and columns of boxes
+var gridsize = 9; //Rows and columns of boxes
 var boxspace = boxwidth / 100 * 180; //Distance between boxes in percentages of box width
 var gridedgedist = 5; //Distance from first row and column to edge of canvas measured in box widths.
 var backgroundsong;
@@ -14,7 +13,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(600, 600); //window.innerHeight
+    createCanvas(window.innerWidth, window.innerHeight); //window.innerHeight
     
     //backgroundsong.play()
     

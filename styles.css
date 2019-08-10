@@ -5,29 +5,52 @@
 }
 
 body {
-    color: #000010;
+    padding-bottom: 200px;
+    color: #222;
     background-color: #FEFDFD;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div {
-    width: 400px;
-    padding: 1em;
-    margin: 20px auto;
-}
-
 .titlediv {
-    width: 500px;
-    border-bottom-width: 0.08em
+    background-color: rgba(255, 137, 46, 0.22);
+    padding: 3em 5em;
 }
 
 .postdiv {
-    border-bottom: 0.04em solid black;
+    display: grid;
+    grid-template-columns: [firstcol] 1fr 1fr [middlecol] 1fr 1fr [seclastcol] 1fr [lastcol];
+    grid-template-rows: [firstrow] 1fr 1fr [middlerow] 1fr 1fr 1fr [lastrow];
+    margin-bottom: 40px;
+}
+
+.postimgframe {
+    grid-column-start: firstcol;
+    grid-column-end: middlecol;
+    grid-row-start: firstrow;
+    grid-row-end: lastrow;
+    display:flex;
+    justify-content: center;
 }
 
 .postimg {
     max-height: 300px;
-    max-width: 100%;
+    max-width: 50%;
+}
+
+.posttitle {
+    grid-column-start: middlecol;
+    grid-column-end: seclastcol;
+    grid-row-start: firstrow;
+    grid-row-end: middlerow;
+    display: flex;
+    align-items: flex-end;
+}
+
+.postcontent {
+    grid-column-start: middlecol;
+    grid-column-end: seclastcol;
+    grid-row-start: middlerow;
+    grid-row-end: lastrow;
 }
 
 a {
@@ -62,7 +85,11 @@ a:visited {
 }
 
 a:active {
-    background-color: #E0E0E0;
+    background-color: #F0F0F0;
+}
+
+h1, h2 {
+    color:#FF872E;
 }
 
 h1 {
@@ -70,7 +97,6 @@ h1 {
     font-weight: bold;
     padding: 0em;
     padding-bottom: 0.6em;
-    border-bottom: 0.07em solid rgb(30, 30, 30);
     margin: 20px auto;
 }
 
